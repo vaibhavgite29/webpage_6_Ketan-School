@@ -163,6 +163,20 @@ a.dropdown-item:hover {
     background-size: cover;
     background-position: center center;
 }
+.banner-content{
+    position: absolute;
+    top: 22%;
+    width: 50%;
+}
+
+@media screen and (max-width: 1199px){
+    .banner-content{
+        position: relative;
+        top: 5%;
+        width: 50%;
+    }
+
+}
 
 .shape-1 {
     top: 3.5%;
@@ -184,12 +198,11 @@ a.dropdown-item:hover {
 }
 
 .shape-4 {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
+    top: 12%;
+    left: 560px;
     z-index: 1;
-    max-width: 100px;
-    animation: move3 3s linear alternate infinite;
+    margin-top: 480px;
+    animation: move4 4s linear infinite alternate;
 }
 
 .banner h1 {
@@ -498,6 +511,15 @@ a.dropdown-item:hover {
     background: #f5890d;
     transition: 0.3s linear;
 }
+.slider-wrap{
+    position: relative;
+    overflow-x: hidden;
+    height: 500px;;
+}
+.slider-main{
+    position: absolute;
+    width:250%;
+}
 /* Testimonial Section end */
 
 /* Upcoming event Section Start */
@@ -671,6 +693,10 @@ div.rotates {
         top: 75%
     }
 }
+@keyframes move4 {
+    1% { top: 1% }
+    0% { bottom: 1% }
+}
 
 @keyframes border-transform-default {
 
@@ -719,3 +745,31 @@ div.rotates {
     }
 
 }
+
+/* About Page CSS Start */
+.about-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.breadcrumb-item.active{
+    color: #EA512E;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: #EA512E;
+    content: "|";
+}
+/* About Page CSS End */
+/* Gallary Page CSS Start */
+.gallary-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-gallary.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/* Gallary Page CSS Start */
+
